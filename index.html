@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bussruta is a social card game app for local and hosted play around one shared table.">
+    <meta property="og:title" content="Bussruta">
+    <meta property="og:description" content="The social card game for one shared table.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/icons/app-icon.png">
+    <title>Bussruta</title>
+    <link rel="icon" href="assets/icons/app-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Bussruta home">
+        <img src="assets/icons/app-icon.png" alt="" width="36" height="36">
+        <span>Bussruta</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#modes">Game modes</a>
+        <a href="#screens">Screens</a>
+        <a href="#status">Status</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-dark">
+        <div class="hero-copy">
+          <h1>Bussruta</h1>
+          <p class="hero-lede">The social card game for one shared table.</p>
+          <p class="hero-text">Gather friends around one device, or host a table and let everyone join from their own screen. Short rounds, clear turns, and the final bus route when the table is ready for it.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#screens">View gameplay</a>
+            <a class="button button-secondary" href="#status">Development status</a>
+          </div>
+          <div class="phase-strip" aria-label="Game phases">
+            <span>Warmup</span>
+            <span>Pyramid</span>
+            <span>Tie-break</span>
+            <span>Bus route</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Bussruta app screenshots">
+          <figure class="phone phone-back phone-left">
+            <img src="assets/screens/pyramid-cards.jpg" alt="Bussruta pyramid round showing matched table cards.">
+          </figure>
+          <figure class="phone phone-front">
+            <img src="assets/screens/pyramid-table.jpg" alt="Bussruta pyramid table with cards and player hand.">
+          </figure>
+          <figure class="phone phone-back phone-right">
+            <img src="assets/screens/hosted-mode.jpg" alt="Hosted mode screen with Wi-Fi hosting and PIN join options.">
+          </figure>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="Product highlights">
+        <article>
+          <strong>One shared table</strong>
+          <span>Built for real-life groups sitting together.</span>
+        </article>
+        <article>
+          <strong>Local or hosted</strong>
+          <span>Play on one screen, or let players join with a PIN.</span>
+        </article>
+        <article>
+          <strong>Designed for flow</strong>
+          <span>Clear phases keep the game moving without rule hunting.</span>
+        </article>
+      </section>
+
+      <section class="section-light how-section" id="how-it-works">
+        <div class="section-heading">
+          <h2>How it works</h2>
+          <p>Start quickly, keep the table focused, and let the app handle the turn structure.</p>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Gather</h3>
+            <p>Bring the group together and choose the mode that fits the room.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>Connect</h3>
+            <p>Use one device locally, or host a table and share the join details.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Play</h3>
+            <p>Move through warmup, pyramid, tie-breaks, and the bus route.</p>
+          </article>
+          <article>
+            <span class="step-number">4</span>
+            <h3>Finish</h3>
+            <p>Keep the pace up until the final challenge settles the round.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-dark mode-section" id="modes">
+        <div class="mode-copy">
+          <h2>Built for the way people actually play</h2>
+          <p>Bussruta keeps the familiar table-game rhythm, then adds app structure where it helps: setup, phase progress, hosted seats, reconnects, and clear prompts.</p>
+        </div>
+        <div class="mode-grid">
+          <article class="mode-card">
+            <h3>Local play</h3>
+            <p>Everyone plays on one shared device. Good for quick rounds, small tables, and getting started without setup overhead.</p>
+          </article>
+          <article class="mode-card">
+            <h3>Hosted play</h3>
+            <p>One device hosts the table while players join from phones or laptops on the same trusted network.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section section-paper" id="screens">
+        <div class="gallery-copy">
+          <h2>App screens</h2>
+          <p>Actual development screenshots from the private app repository, shown here as public product visuals.</p>
+          <div class="screen-picker" role="tablist" aria-label="Choose screenshot">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-screen="assets/screens/pyramid-table.jpg" data-title="Pyramid table" data-copy="The main table view keeps the current phase, table cards, and player hand visible.">Pyramid table</button>
+            <button type="button" role="tab" aria-selected="false" data-screen="assets/screens/pyramid-cards.jpg" data-title="Shared card state" data-copy="Matched and hidden cards stay legible so players can follow the round together.">Card state</button>
+            <button type="button" role="tab" aria-selected="false" data-screen="assets/screens/hosted-mode.jpg" data-title="Hosted mode" data-copy="Hosting and joining are separated clearly for Wi-Fi and PIN-based play.">Hosted mode</button>
+            <button type="button" role="tab" aria-selected="false" data-screen="assets/screens/local-setup.jpg" data-title="Local setup" data-copy="Local setup keeps the first step simple before the table starts playing.">Local setup</button>
+          </div>
+        </div>
+        <div class="feature-screen">
+          <figure class="phone gallery-phone">
+            <img src="assets/screens/pyramid-table.jpg" alt="Selected Bussruta app screen." data-feature-image>
+          </figure>
+          <div class="screen-caption">
+            <h3 data-feature-title>Pyramid table</h3>
+            <p data-feature-copy>The main table view keeps the current phase, table cards, and player hand visible.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dark play-section">
+        <div>
+          <h2>Play together without turning the game into admin</h2>
+          <p>The app is meant to disappear into the table rhythm. It provides enough structure for rounds, phases, prompts, and hosted seats without making players manage the system.</p>
+        </div>
+        <ul class="check-list">
+          <li>Local single-device flow</li>
+          <li>Hosted Wi-Fi table flow</li>
+          <li>PIN-based joining</li>
+          <li>Phase progress for every round</li>
+          <li>Reconnect-friendly hosted sessions</li>
+        </ul>
+      </section>
+
+      <section class="section-light status-section" id="status">
+        <div class="section-heading">
+          <h2>Development status</h2>
+          <p>Bussruta is in active private development. This public site is for presentation, not source access.</p>
+        </div>
+        <div class="status-grid">
+          <article>
+            <h3>Implemented</h3>
+            <p>Core local game flow, hosted play direction, onboarding, language toggle, and app persistence are represented in the private app build.</p>
+          </article>
+          <article>
+            <h3>In progress</h3>
+            <p>Manual device QA, release polish, final identity assets, store-readiness work, and public distribution decisions.</p>
+          </article>
+          <article>
+            <h3>Private source</h3>
+            <p>The application source code, tests, implementation notes, and private development documents are not published here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section section-paper" id="faq">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Can I see the source code?</summary>
+            <p>No. The source code is private. This repository only contains public-facing showcase material.</p>
+          </details>
+          <details>
+            <summary>Is there a public build?</summary>
+            <p>Not yet. Public build, demo, or store links can be added here when they are ready.</p>
+          </details>
+          <details>
+            <summary>What platforms are planned?</summary>
+            <p>The private app is built around Flutter, with mobile and web-oriented hosted play workflows under development.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bussruta</span>
+      <span>Public showcase. Source code is private.</span>
+      <span>&copy; <span data-year>2026</span></span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
